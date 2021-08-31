@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Pokémon</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" type="imagem/png" href="https://image.flaticon.com/icons/png/512/361/361998.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="img-header"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
+                alt="Logo Pokémon">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row" id="pokemon-container"></div>
+    </div>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" id="previous" onclick="previousPage()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path
+                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z">
+                </path>
+            </svg>
+            Previous
+        </button>
+        <button type="button" class="btn btn-primary" id="next" onclick="nextPage()">
+            Next
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <footer>
+        <div class="footer text-center">Copyright &copy; 2021. All rights reserved.</div>
+    </footer>
+
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
